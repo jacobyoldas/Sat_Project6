@@ -24,7 +24,6 @@ public class _01_LoginStepDefinitions {
     lp.userEnterValidInfo(data.get(0),data.get(1));
   }
  }
-
   @Then("User should login successfully")
   public void userShouldLoginSuccessfully() {
     mp.userShouldLoginSuccessfully();

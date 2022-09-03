@@ -70,18 +70,6 @@ public class MyAccountPageElements extends BasePOM {
     waitUntilVisibleAndClickable(addNewAddressSuccessMsg);
     Assert.assertTrue(addNewAddressSuccessMsg.isDisplayed());
   }
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

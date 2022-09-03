@@ -27,5 +27,4 @@ public class Hook {
   public void tearDown(){
     Driver.quitDriver();
   }
-
 }

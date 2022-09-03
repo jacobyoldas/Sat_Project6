@@ -9,9 +9,6 @@ import io.cucumber.java.en.When;
 public class _02_AddNewAddressStepDefinitions {
 
   MyAccountPageElements mp = new MyAccountPageElements();
-  LoginPageElements lp=new LoginPageElements();
-
-
   @Given("Click on Manage Addresses")
   public void clickOnManageAddresses() {
     mp.clickOnManageAddresses();

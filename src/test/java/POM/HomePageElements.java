@@ -20,8 +20,6 @@ public class HomePageElements extends BasePOM{
   private WebElement chooseColor;
   @FindBy(css = "button[class='action primary tocart']")
   private WebElement addButton;
-//  @FindBy(css = "div[class='messages']")
-//  private WebElement addSuccessMessage;
   @FindBy(xpath = "//a[text()='shopping cart']")
   private WebElement clickShoppingCart;
   @FindBy(xpath = "//button[@title='Proceed to Checkout']//span")
@@ -41,7 +39,6 @@ public void selectAnItemToPurchase(){
   chooseSize.click();
   chooseColor.click();
   addButton.click();
-  //Assert.assertTrue(addSuccessMessage.isDisplayed());
   clickShoppingCart.click();
   waitUntilVisibleAndClickable(proceedToButton);
   shippingMethod.click();
@@ -51,19 +48,4 @@ public void selectAnItemToPurchase(){
   public void validateSuccessfullyPurchaseProduct() {
     Assert.assertTrue(orderedSuccess.isDisplayed());
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

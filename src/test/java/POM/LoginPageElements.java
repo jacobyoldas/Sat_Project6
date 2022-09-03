@@ -21,13 +21,10 @@ public class LoginPageElements extends BasePOM {
   private WebElement passwordInput;
 
   @FindBy(id = "send2")
-  private WebElement sigInButton2; //span[text()='Welcome, Yoldas Yoldas!']
-
+  private WebElement sigInButton2;
 
   @FindBy(xpath = "//strong[text()='Try Demo Customer Access']")
   private WebElement unSuccessMessage;
-
-
 
   public void userNavigateToWebsite(){
     sigInButton.click();
@@ -38,7 +35,6 @@ public class LoginPageElements extends BasePOM {
     passwordInput.sendKeys(data2);
     sigInButton2.click();
   }
-
   public void userEnterInvalidInfo(String email, String password){
     emailInput.sendKeys(email);
     passwordInput.sendKeys(password);
@@ -47,23 +43,4 @@ public class LoginPageElements extends BasePOM {
   public void userShouldNotLoginSuccessfully(){
     Assert.assertTrue(unSuccessMessage.isDisplayed());
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

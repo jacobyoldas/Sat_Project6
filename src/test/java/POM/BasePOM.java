@@ -19,13 +19,9 @@ public class BasePOM {
     wait.until(ExpectedConditions.elementToBeClickable(element));
     element.click();
   }
-
   public void selectFunction(WebElement element, String text) {
     waitUntilVisibleAndClickable(element);
     Select select = new Select(element);
     select.selectByValue(text);
   }
-
-
-
 }

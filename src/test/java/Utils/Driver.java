@@ -12,7 +12,7 @@ public class Driver {
 
   public static WebDriver getDriver() {
 
-    if (driver == null) { // always open clean browser we dont wanna open new driver again again
+    if (driver == null) {
       Logger.getLogger("").setLevel(Level.SEVERE);
       System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "Error");
       System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
@@ -23,10 +23,9 @@ public class Driver {
 
   }
   public static void quitDriver() {
-    if (driver != null) { // if there is driver the quit
+    if (driver != null) {
       driver.quit();
-      driver=null; // if there is not this line then failed coz after quit driver must be null again to open
+      driver=null;
     }
   }
-
 }
