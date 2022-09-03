@@ -25,5 +25,6 @@ public class _02_AddNEwAddressStepsDefinitions {
   }
    @Then("Validate Address created successfully")
   public void validateAddressCreatedSuccessfully() {
+    mp.validateAddressCreatedSuccessfully();
   }
 }

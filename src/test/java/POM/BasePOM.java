@@ -23,7 +23,7 @@ public class BasePOM {
   public void selectFunction(WebElement element, String text) {
     waitUntilVisibleAndClickable(element);
     Select select = new Select(element);
-    select.selectByVisibleText(text);
+    select.selectByValue(text);
   }
 
 

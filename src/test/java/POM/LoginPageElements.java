@@ -34,9 +34,7 @@ public class LoginPageElements extends BasePOM {
   }
 
   public void userEnterValidInfo(String data1, String data2){
-    //emailInput.clear();
     emailInput.sendKeys(data1);
-   // passwordInput.clear();
     passwordInput.sendKeys(data2);
     sigInButton2.click();
   }

@@ -66,6 +66,11 @@ public class MyAccountPageElements extends BasePOM {
     selectFunction(countryDropdown,country);
     saveButton.click();
   }
+  public void validateAddressCreatedSuccessfully() {
+    waitUntilVisibleAndClickable(addNewAddressSuccessMsg);
+    Assert.assertTrue(addNewAddressSuccessMsg.isDisplayed());
+  }
+
 
 
 
