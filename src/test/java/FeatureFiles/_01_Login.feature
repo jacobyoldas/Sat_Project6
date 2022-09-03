@@ -1,13 +1,10 @@
 Feature: Login Luma Functionality
 
-  Scenario Outline: Login with valid username and password as positive test
+  Scenario: Login with valid username and password as positive test
     Given User navigate to website
-    When User enter valid "<email>" and "<password>"
-    Then User should login successfully
-
-    Examples:
-      | email                     | password  |
+    When User enter valid username and password
       | yasinyoldas66@outlook.com | Yozgat-66 |
+    Then User should login successfully
 
   Scenario Outline: Login with invalid username or password as negative test
     Given User navigate to website
